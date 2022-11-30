@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+}
+body{
+  height: 100vh;
+  background-size: cover;
+  background-image: url('./assets/pexels-ekaterina-bolovtsova-6077326.jpg');
+}
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+nav.navbar {
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+  background: #2a2821;
+  padding: 1.5rem 4rem;
+  align-items: center;
+}
+nav.navbar img {
+  width: 100px;
+}
+ul.list {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+li.list-item {
+  color: #ffffff8f;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: .5rem 2.6rem;
+  transition: .3s ease-in;
+}
+li.list-item:first-child,li.list-item:hover{
+  color: white;
+  font-weight: bold;
+}
+button.button-small{
+  background: transparent;
+  padding: .8rem 1.5rem;
+  border: solid 1px #8e7f33;
+  color: #8e7f33;
+  border-radius: 8px;
+  transition: .3s ease-in;
+
+}
+button:hover{
+  background:#8e7f33;
+  color: rgb(255, 255, 255);
+}
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+.hero {
+  padding: 3rem 4rem;
+  justify-content: space-around;
+  display: flex;  
+  background: #2b2922;  
+}
+p {
+  color: #ffffff8c;
+  padding: 2rem 3rem;
+  margin: auto;
+  line-height: 1.5;
+  flex-shrink: 2;
+}
+h1.hero-heading {
+  color: #ffffff;
+  font-size: 5rem;
+  /* width: 60%; */
+  flex-grow: 10;
+  margin: auto;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+button.button-large {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+.bottom {
+  width: calc(100% - 4rem);
+  text-align: right;
+  position: absolute;
+  bottom: 2rem;
+}
+.bottom img {
+  width: 120px;
+  height: auto;
+}
+footer{
+  height: 120px;
+  background-color: #2b2922;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer ul{
+  padding: 0;
+  list-style: none;
+  float: right;
+  display: flex;
+  height: 100%;
+}
+footer li{
+  background: #39372d;
+  height: 100%;
+  padding: 1.5rem 2rem;
+  display: block;
+  transition: .3s;
+}
+footer li a{
+  width: 75px;
+  height: 75px;
+  display: block;
+  text-align: center;
+  border-radius: 50px;
+  border: solid 1px #8e7f33;
+  padding-top: 18px;
+  font-size: 2rem;
+  color: #8e7f33;
+  
+}
+footer li.active{
+  background: #8e7f33;
+}
+footer li:hover{
+  background: #8e7f3377;
+}
+footer li.active a,footer li:hover a{
+  color: white;
+  border-color: white;
+}
